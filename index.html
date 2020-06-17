@@ -31,7 +31,7 @@
                         <li class="menu-header__tab"><a href="#" class="link">Cтрахование</a></li>
                         <li class="menu-header__tab"><a href="#" class="link">Друзья</a></li>
                         <li class="menu-header__tab"><a href="#" class="link">Интернет-банк</a></li>
-                    </ul>   
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -58,6 +58,7 @@
                 <div class="calculator__field">
                     <label class="field__fieldname" for="deposite">Сумма вклада</label>
                     <input type="number" name="deposite" min="1000" max="3000000" class="field__input-field">
+                    <input type="range" name="deposite-range" class="field__range-field">
                 </div>
                 <!-- Deposite term field -->
                 <div class="calculator__field">
@@ -73,13 +74,16 @@
                 <!-- Deposite replenishment field -->
                 <div class="calculator__field">
                     <label for="replenishment" class="field__fieldname">Пополнение вклада</label>
-                    <input type="radio" name="replenishment" value="true" checked="checked"> <p class="field__radioname">Да</p>
-                    <input type="radio" name="replenishment" value="false"> <p class="field__radioname">Нет</p>
+                    <input type="radio" name="replenishment" value="true" checked="checked">
+                    <p class="field__radioname">Да</p>
+                    <input type="radio" name="replenishment" value="false">
+                    <p class="field__radioname">Нет</p>
                 </div>
                 <!-- Deposit replenishment amount field -->
                 <div class="calculator__field">
                     <label class="field__fieldname" for="replenishment-amount">Сумма пополнения вклада</label>
-                    <input type="number" name="replenishment-amount" min="1000" max="3000000" class="field__input-field">
+                    <input type="number" name="repl " min="1000" max="3000000" class="field__input-field">
+                    <input type="range" name="deposite-range" class="field__range-field ">
                 </div>
                 <div class="calculator__field calculator__field_result-field">
                     <button type="submit" class="calculator__button">Рассчитать</button>
@@ -89,7 +93,7 @@
             </form>
         </div>
     </main>
-    
+
     <footer>
         <nav>
             <div class="menu-footer container">
@@ -100,9 +104,10 @@
                     <li class="menu-footer__tab"><a href="#" class="link">Cтрахование</a></li>
                     <li class="menu-footer__tab"><a href="#" class="link">Друзья</a></li>
                     <li class="menu-footer__tab"><a href="#" class="link">Интернет-банк</a></li>
-                </ul>   
+                </ul>
             </div>
         </nav>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
