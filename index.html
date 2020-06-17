@@ -10,7 +10,7 @@
 
     <!--Add stylesheets-->
     <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <script src="calc.js"></script>
     <!-- Add JQuery Datepicker -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
@@ -61,12 +61,12 @@
     <main class="container">
         <div class="calculator">
             <h2 class="calculator__header">Калькулятор</h2>
-            <form action="#" class="calculator__form"">
+            <form action="/calc.php" method="post" class="calculator__form">
                 <!-- Date field -->
                 <div class="calculator__field">
                     <label class="field__fieldname" for="date">Дата оформления вклада</label>
                     <!-- <input type="date" name="date" class="field__input-field"> -->
-                    <input type="text" id='datepicker'>
+                    <input type="text" name="date" id='datepicker'>
                 </div>
                 <!-- Deposite budget field -->
                 <div class="calculator__field">
@@ -103,7 +103,7 @@
                     <input type="range" name="replenishment-amount"  min="1000" max="3000000" value='10000' class="field__range-field replenishment-amount_result-value">
                 </div>
                 <div class="calculator__field calculator__field_result-field">
-                    <button type="submit" class="calculator__button" >Рассчитать</button>
+                    <input type="submit" class="calculator__button" value="Рассчитать">
                     <p class="calculator__result-name">Результат: <span class="calculator__result">10 000 руб</span></p>
                 </div>
             </form>
@@ -124,6 +124,8 @@
             </div>
         </nav>
     </footer>
+    <!-- Add JQuery AJAX listener -->
+
 </body>
 <script src="script.js"></script>
 </html>
