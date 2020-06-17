@@ -1,5 +1,8 @@
 /*Add "Europe normal" font*/
-@import url(https://allfont.net/allfont.css?fonts=europe-normal);
+@font-face {
+    font-family: "Europe Normal";
+    src: url("src/font/europe-normal.ttf");
+}
 
 /*Reset default style settings*/
 ul {
@@ -38,7 +41,7 @@ a {
 }
 
 .header__phone {
-    font-family: Europe Normal;
+    font-family: "Europe Normal";
     color: #eb5017;
     font-size: 18px;
 }
@@ -57,6 +60,9 @@ a {
 
 .menu-header__tab:hover {
     background-color: #3b3133;
+}
+.menu-header__tab-active:hover {
+    background-color: #eb5017;
 }
 .menu-header__tab .link {
     display: block;
