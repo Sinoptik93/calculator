@@ -175,6 +175,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-weight: 600;
     color: #395306;
 }
+.calculator__button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #95e905 0%, #cfff55 100%);
+    color: #55790f;
+}
 .calculator__result-name {
     margin-left: 25px;
     font-family: "Arial - Bold MT", sans-serif;
