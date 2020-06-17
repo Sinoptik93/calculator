@@ -158,13 +158,25 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-size: 14px;
 }
 
+/* Fix this */
+.replenishment-amount_result-area {
+    padding: 4px 0 2px 2px;
+    border: 1px solid #27434b78;
+    background-color: #fff;
+}
+.deposite-range_result-area {
+    padding: 4px 0 2px 2px;
+    border: 1px solid #27434b78;
+    background-color: #fff;
+}
+/**/
 .field__range-field {
     margin-left: 15px;
     -webkit-appearance: none;
     position: relative;
     width: 240px;
     height: 6px;
-    background: linear-gradient(90deg, #a3ca4c 60%, #1e1f22 60%);
+    background: linear-gradient(90deg, #a3ca4c 0%, #1e1f22 0%);
     outline: none;
     border: 0.5px solid #ffffff;
     -webkit-transition: 0.2s;
@@ -254,7 +266,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .calculator__result {
     margin-left: 5px;
     font-family: "Arial MT", sans-serif;
+    font-weight: 400;
     font-size: 14px;
+    color: #000000;
 }
 
 /*Footer style*/
