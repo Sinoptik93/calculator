@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--Meta information-->
+    <meta name="description" content="Test task fot junior position">
+    <title>World Bank Publications</title>
+    <meta name="author" content="Chepukhin Sergey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Add stylesheets-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-header container">
+            <div id="test">
+                <div class="header__logo">
+                    <a href="https://sinoptik93.github.io/"><img src="src/icon.png" alt="bank_logo"></a>
+                </div>
+                <div class="header__phones">
+                    <div class="header__phone">8-800-100-5005</div>
+                    <div class="header__phone">+7 (3452) 522-000</div>
+                </div>
+            </div>
+            <nav>
+                <div class="menu-header__tabs">
+                    <ul class="menu-header__tabs">
+                        <li class="menu-header__tab"><a href="#" class="link">Кредитные карты</a></li>
+                        <li class="menu-header__tab menu-header__tab-active"><a href="/" class="link">Вклады</a></li>
+                        <li class="menu-header__tab"><a href="#" class="link">Дебетовая карта</a></li>
+                        <li class="menu-header__tab"><a href="#" class="link">Cтрахование</a></li>
+                        <li class="menu-header__tab"><a href="#" class="link">Друзья</a></li>
+                        <li class="menu-header__tab"><a href="#" class="link">Интернет-банк</a></li>
+                    </ul>   
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs container">
+        <ul class="breadcrumbs__links">
+            <li class="breadcrumbs__link"><a href="#" class="link">Главная</a></li>
+            <li class="breadcrumbs__link"><a href="#" class="link">Вклады</a></li>
+            <li class="breadcrumbs__link breadcrumbs__link-active">Калькулятор</li>
+        </ul>
+    </div>
+
+    <main class="container">
+        <div class="calculator">
+            <h2 class="calculator__header">Калькулятор</h2>
+            <form action="#" class="calculator__form" method="GET">
+                <!-- Date field -->
+                <div class="calculator__field">
+                    <label class="field__fieldname" for="date">Дата оформления вклада</label>
+                    <input type="date" name="date" class="field__input-field">
+                </div>
+                <!-- Deposite budget field -->
+                <div class="calculator__field">
+                    <label class="field__fieldname" for="deposite">Сумма вклада</label>
+                    <input type="number" name="deposite" min="1000" max="3000000" class="field__input-field">
+                </div>
+                <!-- Deposite term field -->
+                <div class="calculator__field">
+                    <label for="term" class="field__fieldname">Срок вклада</label>
+                    <select name="term" class="field__input-field">
+                        <option value="1">1 год</option>
+                        <option value="2">2 года</option>
+                        <option value="3">3 года</option>
+                        <option value="4">4 года</option>
+                        <option value="5">5 лет</option>
+                    </select>
+                </div>
+                <!-- Deposite replenishment field -->
+                <div class="calculator__field">
+                    <label for="replenishment" class="field__fieldname">Пополнение вклада</label>
+                    <input type="radio" name="replenishment" value="true" checked="checked"> <p class="field__radioname">Да</p>
+                    <input type="radio" name="replenishment" value="false"> <p class="field__radioname">Нет</p>
+                </div>
+                <!-- Deposit replenishment amount field -->
+                <div class="calculator__field">
+                    <label class="field__fieldname" for="replenishment-amount">Сумма пополнения вклада</label>
+                    <input type="number" name="replenishment-amount" min="1000" max="3000000" class="field__input-field">
+                </div>
+                <div class="calculator__field calculator__field_result-field">
+                    <input type="submit" value="Рассчитать" class="calculator__button">
+                    <p class="calculator__result-name">Результат:</p>
+                    <div class="calculator__result">10 000 руб</div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <nav>
+            <div class="menu-footer container">
+                <ul class="menu-footer__tabs">
+                    <li class="menu-footer__tab"><a href="#" class="link">Кредитные карты</a></li>
+                    <li class="menu-footer__tab menu-footer__tab-active"><a href="/" class="link">Вклады</a></li>
+                    <li class="menu-footer__tab"><a href="#" class="link">Дебетовая карта</a></li>
+                    <li class="menu-footer__tab"><a href="#" class="link">Cтрахование</a></li>
+                    <li class="menu-footer__tab"><a href="#" class="link">Друзья</a></li>
+                    <li class="menu-footer__tab"><a href="#" class="link">Интернет-банк</a></li>
+                </ul>   
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

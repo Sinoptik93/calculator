@@ -1,0 +1,217 @@
+/*Add "Europe normal" font*/
+@import url(https://allfont.net/allfont.css?fonts=europe-normal);
+
+/*Reset default style settings*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+/*1000px*/
+.container {
+    max-width: 1000px;
+    margin: 0px auto;
+    position: relative;
+}
+
+/*Header style*/
+.menu-header {
+    height: 150px;
+}
+
+/*FIX THIS*/
+#test {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header__phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__phone {
+    font-family: Europe Normal;
+    color: #eb5017;
+    font-size: 18px;
+}
+
+.menu-header__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background-color: #eb5017;
+}
+.menu-header__tab {
+    box-sizing: border-box;
+    background-color: #231f20;
+}
+
+.menu-header__tab:hover {
+    background-color: #3b3133;
+}
+.menu-header__tab .link {
+    display: block;
+    height: 45px ;
+    padding: 0 41px;
+    font-family: "Arial MT", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 45px;
+}
+.menu-header__tab-active {
+    background-color: #eb5017;
+}
+
+/*Breadcrumbs style*/
+.breadcrumbs__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.breadcrumbs__link {
+    font-family: "Arial MT", sans-serif;
+    font-size: 12px;
+}
+
+.breadcrumbs__link .link {
+    border-bottom: 1px solid #231f20;
+    color: #231f20;
+}
+.breadcrumbs__link:after {
+    content: '\00a0-\00a0';
+}
+
+
+.breadcrumbs__link-active {
+    border-bottom: none; 
+}
+.breadcrumbs__link-active:after {
+    content: '';
+}
+
+/*Calculator style*/
+.calculator {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 380px;
+    background-color: #dfdfdf;;
+}
+
+.calculator__header {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 100px;
+    font-family: "Arial MT", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #eb5017;
+}
+
+.calculator__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.calculator__field {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.field__fieldname {
+    display: inline-block;
+    width: 200px;
+    padding-right: 25px;
+    text-align: right;
+    font-family: "Arial MT", sans-serif;
+    font-size: 14px;
+}
+
+.field__input-field {
+    width: 90px;
+    font-family: "Arial MT", sans-serif;
+    font-size: 14px;
+}
+
+.field__radioname {
+    display: inline-block;
+    margin: 0;
+    font-family: "Arial MT", sans-serif;
+    font-size: 14px;
+}
+
+.calculator__field_result-field {
+    margin: 10px 20px;
+}
+
+.calculator__button {
+    width: 100px;
+    height: 33px;
+    box-shadow: 1px 2px 5px #00000030, inset 0 0 2px #ffffbe85;
+    border: 1px solid #c3c4c4;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #7cc400 0%, #aff300 100%);
+    font-family: "Arial - Bold MT", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #395306;
+}
+.calculator__result-name {
+    margin-left: 25px;
+    font-family: "Arial - Bold MT", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #395306;
+}
+.calculator__result {
+    margin-left: 5px;
+    font-family: "Arial MT", sans-serif;
+    font-size: 14px;
+}
+
+/*Footer style*/
+.menu-footer {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #231f20;
+}
+
+.menu-footer__tabs {
+    margin-top: 15px;
+    margin-left: 45px;
+}
+.menu-footer__tab {
+    display: inline-block;
+}
+
+.menu-footer__tab .link {
+    display: block;
+    font-family: "Arial MT", sans-serif;
+    font-size: 12px;
+    margin: 0 12px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}

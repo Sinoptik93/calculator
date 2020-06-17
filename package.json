@@ -1,0 +1,25 @@
+{
+  "name": "sinoptik93.github.io",
+  "version": "1.0.0",
+  "description": "Test task for junior frontend position",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sinoptik93/sinoptik93.github.io.git"
+  },
+  "author": "Chepukhin S.V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sinoptik93/sinoptik93.github.io/issues"
+  },
+  "homepage": "https://github.com/Sinoptik93/sinoptik93.github.io#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "htmlhint": "^0.14.0"
+  }
+}
