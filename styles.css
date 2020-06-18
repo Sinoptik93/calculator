@@ -48,14 +48,19 @@ a {
 
 .menu-header__tabs {
     display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: left;
     background-color: #eb5017;
+    padding: 0;
 }
 .menu-header__tab {
+    display: flex;
+    justify-content: center;
     box-sizing: border-box;
+    width: calc(100% / 6);
     background-color: #231f20;
+    border-left: 1px solid #eb5017;
+    border-right: 1px solid #eb5017;
 }
 
 .menu-header__tab:hover {
@@ -67,7 +72,7 @@ a {
 .menu-header__tab .link {
     display: block;
     height: 45px ;
-    padding: 0 41px;
+
     font-family: "Arial MT", sans-serif;
     font-size: 14px;
     color: #ffffff;
@@ -159,17 +164,26 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 /* Fix this */
+.field__date-field {
+    width: 90px;
+    height: 18px;
+}
+
 .replenishment-amount_result-area {
+    width: 90px;
+    height: 18px;
     padding: 4px 0 2px 2px;
     border: 1px solid #27434b78;
     background-color: #fff;
 }
 .deposite-range_result-area {
+    width: 90px;
+    height: 18px;
     padding: 4px 0 2px 2px;
     border: 1px solid #27434b78;
     background-color: #fff;
 }
-/**/
+
 .field__range-field {
     margin-left: 15px;
     -webkit-appearance: none;
@@ -297,4 +311,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
     margin: 0 12px;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
+}
+
+.notValid {
+    border: 2px solid #ec3c3c;
 }
