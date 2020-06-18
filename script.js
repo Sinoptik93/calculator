@@ -2,7 +2,7 @@
 const depositeRangeElem = document.getElementsByClassName('deposite-range_result-value')[0];
 const depositeResultAreaElem = document.getElementsByClassName('deposite-range_result-area')[0];
 
-// Refactor this
+// REFACTOR THIS
 const replAmountRangeElem = document.getElementsByClassName('replenishment-amount_result-value')[0];
 const replAmountResultAreaElem = document.getElementsByClassName('replenishment-amount_result-area')[0];
 
