@@ -1,10 +1,8 @@
-// REFACTOR THIS
-const depositeRangeElem = document.getElementsByClassName('deposite-range_result-value')[0];
-const depositeResultAreaElem = document.getElementsByClassName('deposite-range_result-area')[0];
+const depositeRangeElem = document.querySelector('.deposite-range_result-value');
+const depositeResultAreaElem = document.querySelector('.deposite-range_result-area');
 
-// REFACTOR THIS
-const replAmountRangeElem = document.getElementsByClassName('replenishment-amount_result-value')[0];
-const replAmountResultAreaElem = document.getElementsByClassName('replenishment-amount_result-area')[0];
+const replAmountRangeElem = document.querySelector('.replenishment-amount_result-value');
+const replAmountResultAreaElem = document.querySelector('.replenishment-amount_result-area');
 
 const renderResultArea = (areaElement, sliderElement) => {
   sliderElement.oninput = () => {
