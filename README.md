@@ -1,6 +1,6 @@
 # Task for junior frontend position
 
-- **Github Pages link:** [sinoptik93.github.io](https://sinoptik93.github.io)
+- **Github Pages link:** [sinoptik93.github.io/calculator](https://sinoptik93.github.io/calculator)
 - **Task problems:** [link](https://docs.google.com/document/d/1aO0s_bxXzOTZx2wcCZWiY2T0QM5vBmWYeRRcTE3ryP8/edit?usp=sharing)
 
 
